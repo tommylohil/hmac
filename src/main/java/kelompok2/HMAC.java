@@ -2,14 +2,15 @@ package kelompok2;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.StandardCharsets;
 
 public class HMAC {
 
     public static byte[] hmacMD5(String secretKey, String message) {
         try {
             // Convert string to byte[]
-            byte[] secretKeyBytes = secretKey.getBytes("UTF-8");
-            byte[] messageBytes = message.getBytes("UTF-8");
+            byte[] secretKeyBytes = secretKey.getBytes(StandardCharsets.UTF_8);
+            byte[] messageBytes = message.getBytes(StandardCharsets.UTF_8);
             byte[] result = null;
 
             // Setup HmacMD5
