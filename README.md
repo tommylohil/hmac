@@ -2,7 +2,7 @@
 HMAC (Keyed-hash Message Authentication Code) implementation in java
 
 ## Prerequisite
-Install Maven [a link](https://maven.apache.org/install.html)
+[Install Maven](https://maven.apache.org/install.html)
 
 ## How to run
 ```
